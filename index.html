@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="ES">
     <head>
         <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
         <meta charset="UTF-8" />
@@ -10,35 +10,102 @@
         <link href="./assets/css/reset.css" rel="stylesheet" />
         <link href="./assets/css/cabecera.css" rel="stylesheet" />
         <link href="./assets/css/style.css" rel="stylesheet" />
-        <link href="./assets/css/menu-iten.css" rel="stylesheet" />
-        <link href="./assets/css/munu-cabecera.css" rel="stylesheet" />
-        <link href="./assets/css/menu-lista.css" rel="stylesheet" />
-        <link href="./assets/css/menu-link.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-iten.css" rel="stylesheet" />
+        <link href="./assets/css/menu-cabecera.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-lista.css" rel="stylesheet" />
+        <link href="./assets/css/menu/menu-link.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-imagen.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/banner/banner.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre-descripcion.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/sobre/sobre.css" rel="stylesheet" />
+        <link href="./assets/css/perfil/perfil-boton.css" rel="stylesheet" />
+        <link href="./assets/css/perfil/perfil-contenido.css" rel="stylesheet" />
+        <link href="./assets/css/perfil/perfil-descripcion.css" rel="stylesheet" />
+        <link href="./assets/css/perfil/perfil-imagen.css" rel="stylesheet" />
+        <link href="./assets/css/perfil/perfil-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/perfil/perfl.css" rel="stylesheet" />
+        <link href="./assets/css/perfiles.css" rel="stylesheet" />
     </head>
     <body>
             <header class="cabecera">
                 <img class="logo" src='./assets/img/logoD.png' width="100" height="100">
                 <nav class="menu">
-                    <ul class="menu-lista">
-                        
-                        <li class="munu-iten"><a class="menu-link" id="activo" href="#">Inicio</a> </li>
-                            <li class="munu-iten"><a class="menu-link" href="">Seguidores</a></li>
-                                <li class="munu-iten" ><a  class="menu-link" href="">Quines somos </a></li>
-                                    <li class="munu-iten"><a class="menu-link" href="">Contacto</a> </li>
-                       
+                    <ul class="menu__lista">
+                        <li class="menu__iten"><a class="menu__link activo"  href="#">Inicio</a> </li>
+                        <li class="menu__iten"><a class="menu__link" href="#">Quines somos </a></li>
+                        <li class="menu__iten"><a class="menu__link" href="#">Contacto</a> </li>
+                        <li class="menu__iten"><a class="menu__link" href="#">Seguidores</a></li>
                     </ul>
                 
-                </nav>
-            </header>
-                <section>
-                    <img src="">
-                    <h2>Tik Tok</h2>
-                </section>
+    </nav>
+    </header>  
+        <section class="banner">
+            <img class="banner__imagen" src="./assets/img/TKP.jpg" alt="banner">
+            <h2 class="banner__titulo">Tik Tok</h2>
+        </section>
 
-                <section>
-                    <h2>Seguidores de Tik Tok</h2>
-                </section>
-           
+        <section class="sobre">
+            <h2 class="sobre__titulo">Seguidores de Tik Tok</h2>
+            <p class="sobre__descripcion">Comenta en un tik tok si quieres que ponga tu imagen</p>
+        </section>   
+        
+        -----------------------------------------------------------------------------------------
+        <section class="perfiles">
+            <div class="perfil">
+                <img alt="Tigela de abacate" class="perfil__imagen" src="./assets/img/danito.jpg" />
+                <div class="perfil__contenido">
+                    <h4 class="perfil__titulo">danito </h4>
+                    <p class="perfil__descripcion"></p>
+                  <a href="https://www.tiktok.com/@danito_r?is_from_webapp=1&sender_device=pc"> <button class="perfil__boton">Tik Tok </button></a> 
+                </div>
+            </div>
+<!--
+            <div class="perfil">
+                <img alt="Ensalada de kiwi" class="perfil__imagen" src="./assets/img/recetas/ensalada-de-kiwi.jpg" />
+                <div class="perfil__contenido">
+                    <h4 class="perfil__titulo">Ensalada de kiwi</h4>
+                    <p class="perfil__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
+                    <button class="perfil__boton">Ver receta</button>
+                </div>
+            </div>
+            <div class="perfil">
+                <img alt="Mix de vegetales" class="perfil__imagen" src="./assets/img/recetas/mix-de-vegetales.jpg" />
+                <div class="perfil__contenido">
+                    <h4 class="perfil__titulo">Mix de vegetales</h4>
+                    <p class="perfil__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
+                    <button class="perfil__boton">Ver receta</button>
+                </div>
+            </div>
+            <div class="perfil">
+                <img alt="Pimentones a la Juliana" class="perfil__imagen" src="./assets/img/recetas/pimentones-a-la-juliana.jpg" />
+                <div class="perfil__contenido">
+                    <h4 class="perfil__titulo">Pimentones a la Juliana</h4>
+                    <p class="perfil__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
+                    <button class="perfil__boton">Ver receta</button>
+                </div>
+            </div>
+            <div class="perfil">
+                <img alt="Plato oriental" class="perfil__imagen" src="./assets/img/recetas/plato-oriental.jpg" />
+                <div class="perfil__contenido">
+                    <h4 class="perfil__titulo">Plato oriental</h4>
+                    <p class="perfil__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
+                    <button class="perfil__boton">Ver receta</button>
+                </div>
+            </div>
+            <div class="perfil">
+                <img alt="Remolachas horneadas" class="perfil__imagen" src="./assets/img/recetas/remolachas-horneadas.jpg" />
+                <div class="perfil__contenido">
+                    <h4 class="perfil__titulo">Remolachas horneadas</h4>
+                    <p class="perfil__descripcion">Receta refrescante y llena de vitaminas para su desayuno.</p>
+                    <button class="perfil__boton">Ver receta</button>
+                </div>
+            </div>
+
+            -->
+    </section>   
+
 
     </body>
 </html>

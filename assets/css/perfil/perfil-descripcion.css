@@ -1,0 +1,10 @@
+.perfil__descripcion{
+    font: size 1.78em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.perfil__contenido{
+    padding: 1rem;
+
+}
